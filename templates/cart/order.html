@@ -1,0 +1,69 @@
+{% include 'components/header.html' %}
+
+<div class="order-container">
+    <h1>Ваши заказы</h1>
+    <ul class="order-list">
+        {% for i in order %}
+        <li class="order-item">
+            <div class="order-details">
+                <p><strong>Книга:</strong> {{ i.choice_book }}</p>
+                <p><strong>Адрес:</strong> {{ i.address }}</p>
+                <p><strong>Номер телефона:</strong> {{ i.phone_number }}</p>
+                <p><strong>Способ оплаты:</strong> {{ i.payment }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<style>
+
+    .order-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+
+    .order-container h1 {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+
+    .order-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .order-item {
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .order-item:hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .order-details p {
+        font-size: 16px;
+        color: #555;
+        margin: 5px 0;
+    }
+
+    .order-details strong {
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+
+{% include 'components/footer.html' %}

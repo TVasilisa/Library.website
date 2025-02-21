@@ -1,0 +1,84 @@
+{% include 'components/header.html' %}
+
+<div class="form-container">
+    <h1>Добавить заказ</h1>
+    <form action="/create_order/" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-buttons">
+            <button type="submit" class="submit-btn">Добавить заказ</button>
+            <button type="reset" class="reset-btn">Очистить форму</button>
+        </div>
+    </form>
+</div>
+
+<style>
+
+    .form-container {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+    }
+
+
+    .form-container h1 {
+        text-align: center;
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+
+    .form-container form p {
+        margin-bottom: 15px;
+    }
+
+    .form-container input, .form-container select, .form-container textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .form-container input:focus, .form-container select:focus, .form-container textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+
+    .form-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .submit-btn, .reset-btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 48%;
+    }
+
+    .submit-btn:hover {
+        background-color: #218838;
+    }
+
+    .reset-btn {
+        background-color: #dc3545;
+    }
+
+    .reset-btn:hover {
+        background-color: #c82333;
+    }
+</style>
+
+{% include 'components/footer.html' %}

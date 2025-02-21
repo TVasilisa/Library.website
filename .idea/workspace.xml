@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="841cd088-8c7c-4ab2-a5eb-2e95792ec18c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/books/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clothes/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/hashtags.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cart/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/clothing/adult_cloth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/clothing/all_clothes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/clothing/child_cloth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/clothing/teen_clothes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/components/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/review_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/books/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/book_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +38,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -44,8 +61,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -82,7 +101,11 @@
       <workItem from="1739003048653" duration="4542000" />
       <workItem from="1739007746009" duration="320000" />
       <workItem from="1739012428504" duration="3990000" />
-      <workItem from="1739301170927" duration="675000" />
+      <workItem from="1739301170927" duration="1344000" />
+      <workItem from="1739549547590" duration="6244000" />
+      <workItem from="1740069771211" duration="10010000" />
+      <workItem from="1740085087570" duration="2000" />
+      <workItem from="1740159601700" duration="11675000" />
     </task>
     <servers />
   </component>

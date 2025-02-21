@@ -1,11 +1,23 @@
 from datetime import datetime
 from idlelib import query
 
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 
-from . import models
+from . import models, forms
 from django.http import HttpResponse
 
+#review
+def create_review_view(request):
+    if request.method == 'POST':
+        form = forms.CreateReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.save()
+            book_id = review.choice_book.id
+            return redirect('book_detail', id=book_id)
+    else:
+        form = forms.CreateReviewForm
+        return render(request, 'review_form.html', {'form': form})
 
 # books list
 def book_list_view(request):
