@@ -6,23 +6,6 @@ from books.models import ReviewModel, BookModel
 from . import forms, models
 
 
-# attempt to find
-class SearchView(generic.ListView):
-    template_name = 'book.html'
-
-    def get_queryset(self):
-        query = self.request.GET.get('q')
-        if query:
-            return models.BookModel.objects.filter(title__icontains=query)
-        return models.BookModel.objects.none()
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        query = self.request.GET.get('q')
-        context['q'] = query
-        context['books'] = self.get_queryset()
-        return context
-
 # review
 class CreateReviewView(generic.CreateView):
     model = ReviewModel
@@ -52,6 +35,25 @@ class BookDetailView(generic.DetailView):
 
     def get_object(self):
         return get_object_or_404(models.BookModel, pk=self.kwargs.get('pk'))
+
+
+
+
+# attempt to find
+class SearchView(generic.ListView):
+    template_name = 'book.html'
+
+    def get_queryset(self):
+        return models.BookModel.objects.filter(title__icontains=self.request.GET.get('q'))
+
+    def get_context_data(self, *, books=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['q'] = self.request.GET.get('q')
+        return context
+
+
+
+
 
 
 def about_me(request):

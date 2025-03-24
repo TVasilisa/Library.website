@@ -16,6 +16,7 @@ INSTALLED_APPS = [
     'books',
     'clothes',
     'cart',
+    'parser_app',
 
 ]
 

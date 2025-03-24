@@ -3,4 +3,4 @@ from . import models
 
 admin.site.register(models.CartModel)
 
-# Register your models here.
+

@@ -7,6 +7,7 @@ from . import models, forms
 class OrderView(generic.ListView):
     template_name = 'cart/order.html'
     context_object_name = 'order'
+
     def get_queryset(self):
         return models.CartModel.objects.all()
 
